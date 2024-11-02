@@ -23,7 +23,6 @@ def add_worker(workers):
     # Отсортировать список в случае необходимости.
     if len(workers) > 1:
         workers.sort(key=lambda item: item.get('name', ''))
-
     return(workers)
 
 
