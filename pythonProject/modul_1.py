@@ -60,6 +60,7 @@ def display_workers(staff):
     else:
         print("Список работников пуст.")
 
+
 def select_workers(staff, period):
     """
     Выбрать работников с заданным стажем.
@@ -74,6 +75,7 @@ def select_workers(staff, period):
             result.append(employee)
     # Возвратить список выбранных работников.
     return result
+
 
 def main():
     """
@@ -128,6 +130,7 @@ def main():
 
         else:
             print(f"Неизвестная команда {command}", file=sys.stderr)
+
 
 if __name__ == '__main__':
     main()
