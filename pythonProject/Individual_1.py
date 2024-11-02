@@ -42,19 +42,38 @@ def month_worker(workers):
         print('Сотрудников с указанными параметрами не найдено')
     return
 
+
+def help():
+    print("Список команд:\n")
+    print("add - добавить работника;")
+    print("list - вывести список работников;")
+    print("month - запросить работников определенного месяца;")
+    print("help - отобразить справку;")
+    print("exit - завершить работу с программой.")
+    return
+
+
 def rezult():
     print("Отсортированный список:")
     for item in workers:
         print(item)
+
+
+def end():
+    return exit()
+
 
 if __name__ == '__main__':
     while True:
         # Запросить команду из терминала.
         command = input(">>> ").lower()
         if command == "exit":
-            break
+            end()
         if command == "add":
             workers = add_worker(workers)
         if command == "month":
             month_worker(workers)
-    rezult()
+        if command == "help":
+            help()
+        if command == "list":
+            rezult()
