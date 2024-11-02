@@ -6,7 +6,9 @@ workers = []
 
 
 def add_worker(workers):
-    # Запросить данные о работнике.
+    """
+    Запросить данные о работнике.
+    """
     name = input("Фамилия и инициалы? ")
     numb = input("Телефон? ")
     date = list(map(int, (input("Дата рождения? ")).split()))
@@ -27,6 +29,9 @@ def add_worker(workers):
 
 
 def month_worker(workers):
+    """
+    Выбрать работников с заданным месяцем.
+    """
     key_count1 = 0
     key_count2 = 0
     # Запросить искомый месяц.
@@ -43,6 +48,9 @@ def month_worker(workers):
 
 
 def help():
+    """
+    Справка.
+    """
     print("Список команд:\n")
     print("add - добавить работника;")
     print("list - вывести список работников;")
@@ -53,12 +61,18 @@ def help():
 
 
 def rezult():
+    """
+    Список сотрудников.
+    """
     print("Отсортированный список:")
     for item in workers:
         print(item)
 
 
 def end():
+    """
+    Завершить работу.
+    """
     return exit()
 
 
