@@ -6,8 +6,8 @@ def get_input():
     """
     Ввод данных.
     """
-    x = input("Введите данные ")
-    return x
+    x1 = input("Введите данные ")
+    return x1
 
 
 def test_input(x):
@@ -16,7 +16,7 @@ def test_input(x):
     """
     testing_rez = True
     try:
-        b = int(x)
+        b = int(x1)
     except ValueError:
         testing_rez = False
     print(testing_rez)
@@ -27,7 +27,7 @@ def str_to_int(x):
     """
     Проведение преобразования.
     """
-    c = int(x)
+    c = int(x1)
     return c
 
 
@@ -37,6 +37,6 @@ def print_int(c):
     """
     print(c)
 
-xx = get_input()
-if test_input(xx) == True:
-    print_int(str_to_int(xx))
+x2 = get_input()
+if test_input(x2) == True:
+    print_int(str_to_int(x2))
